@@ -60,7 +60,12 @@ export default function Order() {
           Succes orderan anda akan segera kami proses
         </h1>
         <Link to={"/order"}>
-          <button className="text-lg px-5 py-2 bg-indigo-500 rounded-lg text-white">
+          <button
+            className="text-lg px-5 py-2 bg-indigo-500 rounded-lg text-white"
+            onClick={() => {
+              setOrder([]);
+            }}
+          >
             Order Lagi!
           </button>
         </Link>
